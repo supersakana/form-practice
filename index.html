@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Form Practice | Zac Williamson</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="main">
+        <form class="form" action="zacwilliamson.com" method="get">
+            <h1 class="text-center">Fill out my form!</h1>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="userEmail">Email:</label>
+            <input type="email" name="email" id="userEmail" placeholder="you@example.com">
+
+            <label for="userPassword">Password:</label>
+            <input type="password" name="password" id="userPassword">
+
+            <label for="amount">Age:</label>
+            <input type="number" name="age" id="userAge">
+
+            <label for="comment">Comment:</label>
+            <textarea class="textarea">Comment</textarea>
+
+            <label for="color">Favorite Color:</label>
+            <select name="color">
+                <optgroup label="primary">
+                    <option selected value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="blue">Blue</option>
+                </optgroup>    
+                <optgroup label="secondary">
+                    <option value="orange">Orange</option>
+                    <option value="purple">Purple</option>
+                    <option value="green">Green</option>
+                </optgroup>
+            </select>
+            <fieldset>
+                <legend>Day or Night?</legend>
+                <div class="pick-one">
+                <div>
+                        <input type="radio" id="day" name="dayOrNight" value="day" checked>
+                        <label for="day">Day</label>
+                </div>
+                <div>
+                        <input type="radio" id="night" name="dayOrNight" value="night">
+                        <label for="night">Night</label>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>What do you like in your Guac?</legend>
+                <div class="guacamole">
+                    <div>
+                        <input type="checkbox" name="onion" id="onion">
+                        <label for="onion">Onion</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="tomato" id="tomato">
+                        <label for="tomato">Tomato</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="cilantro" id="cilantro">
+                        <label for="cilantro">Cilantro</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="garlic" id="garlic">
+                        <label for="garlic">Garlic</label>
+                    </div>
+                </div>
+            </fieldset>
+
+
+        </form>
+    </section>
+    
+</body>
+</html>
