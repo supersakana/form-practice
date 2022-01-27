@@ -18,7 +18,7 @@ h2 {
 }
 
 .main {
-  height: 100vh;
+  height: 94vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,22 @@ h2 {
     rgba(0, 93, 255, 1) 78%
   );
   font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(16, 2, 186);
+  z-index: 1;
+}
+
+footer i {
+  color: #fff;
 }
 
 .form {
@@ -113,6 +129,9 @@ h2 {
 }
 
 @media only screen and (max-width: 740px) {
+  .main {
+    height: 100vh;
+  }
   .input-container {
     flex-direction: column;
     align-items: center;
