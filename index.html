@@ -9,76 +9,45 @@
 </head>
 <body>
     <section class="main">
-        <form class="form" action="zacwilliamson.com" method="get">
-            <h1 class="text-center">Fill out my form!</h1>
+        <form class="form" action="zacwilliamson.com" method="post">
+            <div class="input-container">
+                <div class="left">
+                    <h1>Registration</h1>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName"> 
 
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"> 
 
-            <label for="LastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"> 
+                </div>
+                <div class="right">
+            
+                    <label for="userName">Username</label>
+                    <input type="text" id="userName" name="userName"> 
 
-            <label for="userEmail">Email:</label>
-            <input type="email" name="email" id="userEmail" placeholder="you@example.com">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"> 
 
-            <label for="userPassword">Password:</label>
-            <input type="password" name="password" id="userPassword">
-
-            <label for="amount">Age:</label>
-            <input type="number" name="age" id="userAge">
-
-            <label for="comment">Comment:</label>
-            <textarea class="textarea">Comment</textarea>
-
-            <label for="color">Favorite Color:</label>
-            <select name="color">
-                <optgroup label="primary">
-                    <option selected value="red">Red</option>
-                    <option value="yellow">Yellow</option>
-                    <option value="blue">Blue</option>
-                </optgroup>    
-                <optgroup label="secondary">
-                    <option value="orange">Orange</option>
-                    <option value="purple">Purple</option>
-                    <option value="green">Green</option>
-                </optgroup>
-            </select>
-            <fieldset>
-                <legend>Day or Night?</legend>
-                <div class="pick-one">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="confirmPassword" id="confirmPassword" name="confirmPassword"> 
+                </div>
+            </div>
+            <h2>Gender</h2>
+            <div class="radio">
                 <div>
-                        <input type="radio" id="day" name="dayOrNight" value="day" checked>
-                        <label for="day">Day</label>
+                    <input type="radio" id="male" name="male" value="male">
+                    <label for="male">Male</label>
                 </div>
                 <div>
-                        <input type="radio" id="night" name="dayOrNight" value="night">
-                        <label for="night">Night</label>
+                    <input type="radio" id="female" name="female" value="female">
+                    <label for="female">Female</label>
                 </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>What do you like in your Guac?</legend>
-                <div class="guacamole">
-                    <div>
-                        <input type="checkbox" name="onion" id="onion">
-                        <label for="onion">Onion</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="tomato" id="tomato">
-                        <label for="tomato">Tomato</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="cilantro" id="cilantro">
-                        <label for="cilantro">Cilantro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="garlic" id="garlic">
-                        <label for="garlic">Garlic</label>
-                    </div>
-                </div>
-            </fieldset>
-
-
+            </div>
+            <div class="submit">
+                <button type="submit">Register</button>
+            </div>
         </form>
     </section>
     

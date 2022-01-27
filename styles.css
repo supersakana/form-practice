@@ -9,14 +9,12 @@
 }
 
 h1,
-h2,
-label,
-fieldset {
+h2 {
   margin: 10px 0px;
 }
 
-legend {
-  font-weight: bold;
+h2 {
+  font-size: 1.2rem;
 }
 
 .main {
@@ -26,20 +24,116 @@ legend {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #202020;
+  background: rgb(16, 2, 186);
+  background: linear-gradient(
+    142deg,
+    rgba(16, 2, 186, 1) 31%,
+    rgba(0, 93, 255, 1) 78%
+  );
   font-family: "Montserrat", sans-serif;
 }
 
 .form {
   background-color: #fff;
-  width: 70%;
   padding: 20px;
   border-radius: 8px;
+  width: 70%;
+  max-width: 550px;
+}
+
+.input-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 30px;
+}
+
+.input-container label {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.input-container input {
+  margin-bottom: 5px;
+  border: none;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.left,
+.right {
   display: flex;
   flex-direction: column;
+}
+
+.radio {
+  margin-top: 20px;
+}
+
+.radio input {
+  margin: 0px 10px;
+}
+
+.submit {
+  display: flex;
   justify-content: center;
 }
 
-.text-center {
-  text-align: center;
+.submit button {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 70%;
+  margin-top: 20px;
+  background: rgb(16, 2, 186);
+  background: linear-gradient(
+    142deg,
+    rgba(16, 2, 186, 1) 31%,
+    rgba(0, 93, 255, 1) 78%
+  );
+  color: #fff;
+  box-shadow: 2px 2px 5px #888888;
+  transition: transform 0.1s ease-in;
+}
+
+.submit button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+.left {
+  grid-area: left;
+}
+.right {
+  grid-area: right;
+}
+
+@media only screen and (max-width: 740px) {
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .radio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .left {
+    margin-bottom: -25px;
+  }
+
+  .input-container input {
+    margin-bottom: 10px;
+  }
 }
