@@ -55,6 +55,7 @@ footer i {
   border-radius: 8px;
   width: 70%;
   max-width: 550px;
+  box-shadow: 3px 3px 10px #686868;
 }
 
 .input-container {
@@ -105,7 +106,7 @@ footer i {
   font-size: 1.2rem;
   width: 70%;
   margin-top: 20px;
-  background: rgb(16, 2, 186);
+  background: #1102bb;
   background: linear-gradient(
     142deg,
     rgba(16, 2, 186, 1) 31%,
@@ -154,5 +155,6 @@ footer i {
 
   .input-container input {
     margin-bottom: 10px;
+    font-size: 1.2rem;
   }
 }
